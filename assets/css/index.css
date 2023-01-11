@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f8;
+  font-family: "Nunito", sans-serif;
+}
+
+/*nav bar starts */
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+  height: 65px;
+  align-items: center;
+}
+
+/* desktop  laptop  computer  1200px
+tablet     min 720 920px
+phone  620px */
+
+@media only screen and (max-width: 620px) {
+  nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    height: 65px;
+    align-items: center;
+  }
+}
+
+nav a:hover {
+  color: red;
+  transition: 0.5s ease-in;
+}
+
+nav img {
+  width: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.register {
+  background-color: #ff6f00;
+  font-size: 14px;
+  padding: 2px 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.login {
+  margin-right: 10px;
+}
+
+.middle_content a {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 620px) {
+  .middle_content {
+    display: none;
+  }
+}
+
+/* nav bar ends */
+
+/* showcase starts */
+
+.showcase {
+  min-height: 65vh;
+  display: flex;
+  padding-top: 10vh;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.showcase .content {
+  flex: 2;
+  margin-top: 30px;
+}
+.showcase .content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.showcase .content p {
+  font-size: 16px;
+}
+
+.showcase .content button {
+  background-color: #ff6f00;
+  font-size: 22px;
+  padding: 2px 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}
+
+.showcase .img_wrap {
+  flex: 1;
+}
+.showcase .img_wrap img {
+  width: 500px;
+}
+
+@media only screen and (max-width: 620px) {
+  .showcase {
+    display: block;
+    min-height: 65vh;
+
+    padding-top: 3vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .showcase .content h2 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .showcase .content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .showcase .img_wrap img {
+    width: 100%;
+  }
+}
+
+/*showcase ends */
